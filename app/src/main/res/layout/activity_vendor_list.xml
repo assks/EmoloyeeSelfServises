@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/ic_section_background"
+    tools:context=".activity.VendorListActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vendorRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@string/fontFamilyCondensed"
+            android:text="@string/project_not_found"
+            android:textAlignment="center"
+            android:textSize="@dimen/extraHeadingTextSize" />
+
+        <Button
+            android:id="@+id/create_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/create_new_project"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/headingTextSize" />
+    </RelativeLayout>
+</RelativeLayout>

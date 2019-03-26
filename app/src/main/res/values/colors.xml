@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorAccent">#BDBDBD</color>
+    <color name="colorPrimaryText">#000000</color>
+    <color name="colorError">#e64848</color>
+    <color name="colorIconText">#FFFFFF</color>
+    <color name="colorSecondary">#efeeee</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorHolidayWeekend">#a9a9a9</color>
+    <color name="colorLeaves">#ca5883</color>
+    <color name="colorIstIInd">#ed87ae</color>
+    <color name="colorMedical">#dedadad9</color>
+    <color name="colorPersonalEmergency">#59c0ec</color>
+    <color name="colorAnnualHoliday">#a3516f</color>
+    <color name="colorExam">#4871e2</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="colorAmountBg">#d4d4d4</color>
+    <color name="onward_journey">#ffcc00</color>
+    <color name="intermediate_journey">#4b0082</color>
+    <color name="return_journey">#de3333</color>
+    <color name="ic_launcher_background">#ffffff</color>
+
+</resources>

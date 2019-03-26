@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_margin"
+    tools:context=".activity.AddTaskActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/description"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:enabled="false"
+            android:hint="@string/date"
+            android:inputType="none"
+            tools:ignore="TextFields" />
+
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:enabled="false"
+            android:hint="@string/time"
+            android:inputType="none"
+            tools:ignore="TextFields" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/save_continue"
+        android:textColor="@color/colorIconText" />
+</RelativeLayout>

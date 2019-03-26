@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bill_date"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <TextView
+                android:id="@+id/bill_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bottom_line"
+                android:paddingBottom="4dp"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bill_num"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <TextView
+                android:id="@+id/misBillNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line"
+                android:paddingBottom="4dp"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/description_text"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/mislenious_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="4dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vendor_edittext"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/mis_vendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="4dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/gst"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/mis_gstin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="4dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <TextView
+                android:id="@+id/miscQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bottom_line"
+                android:paddingBottom="4dp"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rate"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <TextView
+                android:id="@+id/miscRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line"
+                android:paddingBottom="4dp"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/bill_amount"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/misc_bill_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="4dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize" />
+
+    <TextView
+        android:id="@+id/misAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_remove_red"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:text="@string/attachment" />
+
+</LinearLayout>

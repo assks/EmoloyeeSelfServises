@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_section_background"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_height="match_parent"
+    tools:context=".activity.RequestedProjectActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/notificationRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/emptyLayout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="214dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/emptyTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/headingTextSize"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/headingTextSize" />
+
+                <Button
+                    android:id="@+id/tryAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorDivider"
+                    android:padding="0dp"
+                    android:text="@string/try_again"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryText"
+                    android:theme="@style/Widget.AppCompat.Button" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newMessageFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_expand_less"
+        android:visibility="gone"
+        app:fabSize="mini" />
+</android.support.design.widget.CoordinatorLayout>

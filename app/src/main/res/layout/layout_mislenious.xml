@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/misc_restriction_text"
+        android:textColor="@color/colorError" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/bill_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/bill_date"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:nextFocusRight="@id/misBillNum"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/misBillNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bill_num"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@id/mislenious_description"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/mislenious_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_text"
+            android:imeOptions="actionDone"
+            android:maxLines="3"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/old_mis_vendor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/mis_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/vendor_edittext"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/mis_gstin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gst"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:maxLines="1"
+            android:nextFocusDown="@id/miscQuantity"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider2"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/miscQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/quantity"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:text="1"
+                android:nextFocusRight="@id/miscRate"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider2"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/miscRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/rate"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/misc_bill_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:hint="@string/bill_amount"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/misAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_attachment_vector"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/attachment"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/admin_view_misc_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/miscAttachFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/attachment"
+            android:src="@drawable/ic_remove_red" />
+
+        <TextView
+            android:id="@+id/miscEditAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/miscAttachFile"
+            android:text="@string/attachment" />
+    </RelativeLayout>
+</LinearLayout>

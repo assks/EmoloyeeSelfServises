@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FindCustomerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/ic_section_background"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/projectCollapseView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/marginBetweenField"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/country"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <Spinner
+                android:id="@+id/countrySpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/stateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="@integer/state_threshold"
+                    android:hint="@string/state"
+                    android:inputType="textAutoComplete|textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/districtLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweenField"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <AutoCompleteTextView
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="@integer/state_threshold"
+                    android:hint="@string/district"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginBetweenField"
+                android:text="@string/customer_list"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <Spinner
+                android:id="@+id/customerName"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/findProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_bg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/find_project"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/expandButtonView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/expand_view"
+                android:padding="2dp"
+                android:src="@drawable/ic_expand_more" />
+
+            <TextView
+                android:id="@+id/clientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/expandButtonView"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/travel_distance_edittext"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/headingTextSize" />
+
+            <TextView
+                android:id="@+id/clientLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clientName"
+                android:layout_toStartOf="@id/expandButtonView"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/travel_distance_edittext"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/itemRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/ic_section_background" />
+
+</LinearLayout>

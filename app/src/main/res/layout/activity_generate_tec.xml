@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/ic_section_background"
+    tools:context=".activity.GenerateTecActivity">
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_bg"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/create"
+        android:textColor="@color/colorIconText" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/projectNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@string/fontFamilyLight"
+                android:text="@string/project_name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/smallTextSize" />
+
+            <TextView
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/projectNameText"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bottom_line"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorPrimaryText" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/base_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/projectName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/base_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/base_location"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/site_location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/base_location_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/site_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/site_location"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/travelDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/site_location_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/travel_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:hint="@string/claim_travel_date"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tripBookingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travelDateLayout" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

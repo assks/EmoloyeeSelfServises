@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_section_background"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    tools:context=".activity.FixAssetRequestActivity">
+
+
+    <TextView
+        android:id="@+id/orgTypeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorSecondary"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/extraHeadingTextSize" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_below="@id/orgTypeName"
+        android:layout_height="1dp"
+        android:background="@color/colorDivider"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        app:counterEnabled="true"
+        app:counterMaxLength="300"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/remark"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentBottom="true"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/request"
+        android:textColor="@color/colorIconText"/>
+
+</RelativeLayout>

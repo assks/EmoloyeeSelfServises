@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/hotel_city_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city_area"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/checkIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/check_in_date"
+                android:focusable="false"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/checkOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/check_out_date"
+                android:imeOptions="actionDone"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/admin_room"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:text="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hotelNights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/mediumTextSize"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <in.technitab.ess.util.CustomEditText
+            android:id="@+id/hotel_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/vendor"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/non_rate_per_diem"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/hotel_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/total_amount"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="500"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/hotel_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/instruction"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="500"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

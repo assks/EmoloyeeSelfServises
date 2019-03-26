@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/intercity_restriction_text"
+        android:textColor="@color/colorError" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/mode" />
+
+    <Spinner
+        android:id="@+id/travelModeSpinner"
+        style="@style/spinnerUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/userLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from" />
+
+            <Spinner
+                android:id="@+id/fromSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to" />
+
+            <Spinner
+                android:id="@+id/toSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adminLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/view"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/adminFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/from"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/view"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/adminTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/to"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otherFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/otherForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/other_from_location"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otherToLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/otherTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/to_other_location"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <in.technitab.ess.util.CustomEditText
+            android:id="@+id/intercityBillingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/bill_date"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/DepartureDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/departure_date"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/DepartureTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/departure_time"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider2"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/arrivalDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/arrival_date"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider2"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/arrivalTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/arrival_time"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/intercity_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:hint="@string/vendor"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/bill_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="@string/bill_amount"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/intercityAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_attachment_vector"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/attachment"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/admin_view_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/intercityAttachFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/attachment"
+            android:src="@drawable/ic_remove_red" />
+
+        <TextView
+            android:id="@+id/intercityEditAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/intercityAttachFile"
+            android:text="@string/attachment" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/paid_by" />
+
+    <RadioGroup
+        android:id="@+id/intercityPaidRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/intercityEmployee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/employee" />
+
+        <RadioButton
+            android:id="@+id/intercityAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/accounts" />
+    </RadioGroup>
+
+
+</LinearLayout>

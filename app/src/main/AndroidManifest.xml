@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.technitab.ess">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="in.technitab.ess.activity.AppIntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.AppPermissionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.AddTaskActivity"
+            android:label="@string/add_task"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LeaveActivity"
+            android:label="@string/leave_request"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RestoreDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.LeaveListActivity"
+            android:label="@string/leaves"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name=".FetchAddressIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.DailySummeryActivity"
+            android:label="@string/daily_summery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TimesheetActivity"
+            android:label="@string/add_timesheet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TimesheetHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AddProjectActivity"
+            android:label="@string/add_project"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.FetchLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.FetchCustomNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ActToProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ProjectListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AssignLeaveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.ApproveLeaveActivity"
+            android:label="@string/approve_leave"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ApproveTimeActivity"
+            android:label="@string/approve_timesheet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AddTimesheetActivity"
+            android:label="@string/assign_timesheet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.CustomFieldActivity"
+            android:label="@string/add_vendor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AddressActivity"
+            android:label="@string/address_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AddVendorActivity"
+            android:label="@string/vendor_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.PolicyActivity"
+            android:label="@string/policies"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.UserProfileActivity"
+            android:label="@string/user_profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.GenerateTecActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TecClaimActivity"
+            android:label="@string/create_tec"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TecEntryActivity"
+            android:label="@string/tec_entry"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.EditTecClaimActivity"
+            android:label="@string/tec_claim"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.VendorActivity"
+            android:label="@string/vendor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AdminTECListActivity"
+            android:label="@string/tec"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ExistingProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.OrgFixAssetActivity"
+            android:label="@string/fix_assets"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.SalarySlipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LeaveCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.VendorListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ApproveProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".activity.BookingRequestActivity" />
+        <activity android:name=".activity.ProjectActivity" />
+        <activity android:name=".activity.PickCustomerNameActivity" />
+        <activity
+            android:name=".activity.AdminTecEntryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TravelBookingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AdminVendorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.MiscVendorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AdminTecClaimActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ImageToPdfActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name=".util.GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.CreateTripActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.UserBookingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AdminTravelBooking"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AdminTripListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.AdminTripBookingListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ManualPunchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.ViewTecEntry"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.FindCustomerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.NewTravelBookingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.RequestedProjectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.TripTecsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".activity.BookingVendorActivity" />
+        <activity android:name=".activity.TripRequestActivity" />
+        <activity android:name=".activity.TripRequestBookingActivity" />
+        <activity android:name=".activity.TripBookingPaymentActivity" />
+        <activity android:name=".activity.AssignedAssetActivity" />
+        <activity android:name=".activity.FixAssetRequestActivity" />
+        <activity android:name=".activity.AttachBillActivity" />
+        <activity android:name=".activity.GuesthouseBookingRequestActivity" />
+        <activity android:name=".activity.GuestBookingListActivity"></activity>
+    </application>
+
+</manifest>

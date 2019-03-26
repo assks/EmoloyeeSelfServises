@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@drawable/ic_section_background"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="16dp"
+                android:weightSum="4">
+
+
+                <ImageButton
+                    android:id="@+id/add_timesheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_timesheet"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_add_timesheet" />
+
+
+                <ImageButton
+                    android:id="@+id/month_year_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/month_year_picker"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_month_year_calendar" />
+
+                <ImageButton
+                    android:id="@+id/project_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/project_view"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_project_view_calendar" />
+
+                <ImageButton
+                    android:id="@+id/date_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/date_View"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_date_view_calendar" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/activity_custom_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@drawable/ic_section_background"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/display_current_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@string/fontFamilyMedium"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:id="@+id/sun"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/sun"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/mon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/mon"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/tue"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/wed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/wed"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/thu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/thu"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/fri"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/fri"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@string/fontFamilyMedium"
+                        android:gravity="center"
+                        android:text="@string/sat"
+                        android:textColor="@color/colorDivider"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <in.technitab.ess.util.ExpandableHeightGridView
+                    android:id="@+id/calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="7"
+                    android:verticalSpacing="5dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dateDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@drawable/ic_section_background"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/daySummeryRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

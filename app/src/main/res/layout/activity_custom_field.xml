@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CustomFieldActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/billLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/bill_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bill_num"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/bill_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/view_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_remove_red"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/attachedBillFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_bill"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/error_bill_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/bill_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_bill"
+                    android:layout_toStartOf="@id/error_bill_attachment"
+                    android:drawablePadding="10dp"
+                    android:text="@string/attachment"
+                    android:textColor="@color/colorPrimaryText"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_proof_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/id_proof_type"
+                android:textSize="@dimen/smallTextSize" />
+
+            <Spinner
+                android:id="@+id/idProofSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/id_proof_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/id_proof_num"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_proof_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/view_id_proof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_remove_red"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/attachedProofFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_id_proof"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/error_id_proof_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/id_proof_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_id_proof"
+                    android:layout_toStartOf="@id/error_id_proof_attachment"
+                    android:drawablePadding="10dp"
+                    android:text="@string/id_proof_file"
+                    android:textColor="@color/colorPrimaryText"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/fill_at_least_one"
+                android:textColor="@color/colorError"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bank_doc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/name_of_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_of_bank"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/bank_holder_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/holder_name"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/bank_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bank_address"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/ifsc_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ifsc_code"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/bank_account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/bank_account_number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/bank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/view_bank_passbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_remove_red"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/bank_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_bank_passbook"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/bank_passbook"
+                    android:textColor="@color/colorPrimaryText"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/error_bank_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/attachedBankFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/view_bank_passbook"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone"
+                    android:textSize="@dimen/mediumTextSize" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconText"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/view_action_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/add_vendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/view"
+                android:background="@drawable/button_bg"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText" />
+
+            <Button
+                android:id="@+id/reject_vendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@id/view"
+                android:background="@drawable/button_bg"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/reject"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

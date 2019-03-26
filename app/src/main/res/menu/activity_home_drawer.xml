@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_attendance_leave"
+            android:icon="@mipmap/globe_ess"
+            android:title="@string/attendance_leave" />
+
+        <item
+            android:id="@+id/nav_punch_in_out"
+            android:icon="@mipmap/stopwatch_ess"
+            android:title="@string/punch_in_out" />
+
+        <item
+            android:id="@+id/nav_task_todo_list"
+            android:icon="@drawable/ic_task_todo_list"
+            android:title="@string/nav_task_todo_list" />
+
+        <item
+            android:id="@+id/nav_timesheet"
+            android:icon="@drawable/ic_timesheet"
+            android:title="@string/timesheet" />
+
+        <item
+            android:id="@+id/nav_project_task"
+            android:icon="@drawable/ic_project_activity"
+            android:title="@string/nav_project_activities" />
+
+        <item
+            android:id="@+id/nav_travel"
+            android:icon="@mipmap/suitcase_ess"
+            android:title="@string/nav_travel_booking" />
+
+        <item
+            android:id="@+id/nav_expense"
+            android:icon="@drawable/ic_expense"
+            android:title="@string/expenses" />
+        
+        <item
+            android:id="@+id/nav_vendor"
+            android:icon="@mipmap/user_ess"
+            android:title="@string/vendor" />
+
+        <item android:id="@+id/nav_payroll"
+            android:title="@string/payroll"
+            android:icon="@drawable/ic_budget"/>
+
+        <item
+            android:id="@+id/nav_resource"
+            android:icon="@mipmap/settings_ess"
+            android:title="@string/resource" />
+
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/admin"
+            android:title="@string/admin" />
+
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notifications_none"
+            android:title="@string/notifications" />
+    </group>
+
+</menu>

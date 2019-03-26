@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100">
+
+            <FrameLayout
+                android:id="@+id/camera_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/displayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorIconText"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/time"
+                    android:includeFontPadding="false"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorIconText" />
+
+                <Button
+                    android:id="@+id/punch_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/punch_in_out_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:gravity="center"
+                    android:text="@string/in"
+                    android:textColor="@color/colorIconText"
+                    android:textSize="@dimen/extraHeadingTextSize" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@string/fontFamilyMedium"
+                android:textAlignment="center"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/headingTextSize"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

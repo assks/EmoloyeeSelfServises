@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="handlers"
+            type="in.technitab.ess.activity.GuesthouseBookingRequestActivity.MyClickHandlers" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_section_background"
+        tools:context=".activity.GuesthouseBookingRequestActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/divider1"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/checkIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/check_in"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="Autofill,TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/divider1"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/checkOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/check_out"
+                    android:imeOptions="actionDone"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="Autofill,TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/colorError"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/paidViaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalAmount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/marginBetweenField"
+            android:layout_marginRight="10dp"
+            android:text="@string/paid_by" />
+
+
+        <Spinner
+            android:id="@+id/paidViaSpinner"
+            style="@style/spinnerUnderline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/paidViaText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/referenceNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paidViaSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/marginBetweenField"
+            android:layout_marginRight="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/referenceNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reference_number"
+                android:imeOptions="actionDone"
+                android:maxLines="3"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="Autofill,TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/availabiltyCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/referenceNumberLayout"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/booking_availability" />
+
+        <CheckBox
+            android:id="@+id/guesthouseRuleCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/availabiltyCheck"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/guesthouse_rules" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:onClick="@{handlers::onSubmit}"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconText" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/ic_section_background"
+    android:foreground="?android:selectableItemBackground"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circluler_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/travelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxLength="1"
+            android:text="@string/state"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/titleTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/ic_check_circle"
+        tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/billAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_attach_file"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bookingMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/layout"
+        android:layout_toEndOf="@id/dateLayout"
+        android:includeFontPadding="false"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/state"
+        android:textColor="@color/colorPrimaryText" />
+
+    <TextView
+        android:id="@+id/cityArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookingMode"
+        android:layout_toStartOf="@id/layout"
+        android:layout_toEndOf="@id/dateLayout"
+        android:includeFontPadding="false"
+        android:paddingStart="8dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="8dp"
+        android:text="@string/fontFamilyMedium"
+        android:textColor="@color/colorPrimaryText" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityArea"
+        android:layout_toEndOf="@id/dateLayout"
+        android:fontFamily="@string/fontFamilyLight"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/default_country"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/smallTextSize" />
+</RelativeLayout>

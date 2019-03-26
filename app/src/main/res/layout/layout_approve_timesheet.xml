@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:paddingEnd="10dp"
+      android:paddingStart="10dp"
+      android:textColor="@color/colorPrimary"
+      android:textSize="@dimen/headingTextSize" />
+
+  <TextView
+      android:id="@+id/date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/name"
+      android:fontFamily="@string/fontFamilyLight"
+      android:textColor="@color/colorPrimaryText"
+      android:paddingEnd="10dp"
+      android:paddingStart="10dp"
+      android:textSize="@dimen/mediumTextSize" />
+
+
+  <CheckBox
+      android:id="@+id/is_billable"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/date"
+      android:paddingBottom="8dp"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:paddingTop="8dp" />
+
+  <ImageView
+      android:id="@+id/description"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_below="@id/date"
+      android:contentDescription="@string/description"
+      android:gravity="bottom"
+      android:paddingBottom="8dp"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:paddingTop="8dp"
+      android:src="@drawable/ic_writing" />
+
+  <EditText
+      android:id="@+id/time_spent"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/date"
+      android:layout_toStartOf="@id/description"
+      android:focusable="false"
+      android:hint="@string/hours_text"
+      android:maxLength="4"
+      android:maxLines="1"
+      android:textAlignment="center" />
+
+  <TextView
+      android:id="@+id/task_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/date"
+      android:textColor="@color/colorPrimaryText"
+      android:layout_toEndOf="@id/is_billable"
+      android:layout_toStartOf="@id/time_spent"
+      android:ellipsize="end"
+      android:gravity="bottom"
+      android:maxLines="2"
+      android:paddingBottom="8dp"
+      android:paddingEnd="16dp"
+      android:paddingTop="8dp"
+      android:text="Designing"
+      android:textSize="@dimen/mediumTextSize" />
+
+</RelativeLayout>

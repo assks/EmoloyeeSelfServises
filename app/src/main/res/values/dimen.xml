@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallTextSize">12sp</dimen>
+    <dimen name="mediumTextSize">15sp</dimen>
+    <dimen name="subMediumTextSize">14sp</dimen>
+    <dimen name="headingTextSize">17sp</dimen>
+    <dimen name="extraHeadingTextSize">20sp</dimen>
+    <dimen name="titleTextSize">30sp</dimen>
+    <dimen name="calendarDateTextSize">13sp</dimen>
+    <dimen name="calendarHoursTextSize">9sp</dimen>
+    <dimen name="spacing">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="extra_spacing_small">4dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="dividerHeight" format="float">0.5dp</dimen>
+    <dimen name="table_content_padding">20dp</dimen>
+    <dimen name="small_vertical_spacing">4dp</dimen>
+    <dimen name="marginBetweenField">8dp</dimen>
+</resources>

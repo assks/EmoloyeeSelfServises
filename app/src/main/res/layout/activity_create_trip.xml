@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/ic_section_background"
+    android:scrollbars="none"
+    tools:context=".activity.CreateTripActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/project_name"
+                android:imeOptions="actionDone"
+                android:focusable="false"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/divider"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/from"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/divider"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/to"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/tripStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/start_date"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/member_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/trip_member"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/headingTextSize"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/memberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/create"
+            android:visibility="gone"
+            android:textColor="@color/colorIconText" />
+
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/update"
+            android:visibility="gone"
+            android:textColor="@color/colorIconText" />
+
+    </LinearLayout>
+
+
+</ScrollView>

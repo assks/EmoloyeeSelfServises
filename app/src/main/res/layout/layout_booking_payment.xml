@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/payment_mode"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <RadioGroup
+        android:id="@+id/paymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/bank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/bank" />
+
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/credit_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/online" />
+
+    </RadioGroup>
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/paid_by"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <RadioGroup
+        android:id="@+id/paidByRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/office"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/office" />
+
+        <RadioButton
+            android:id="@+id/self"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/self" />
+
+    </RadioGroup>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <in.technitab.ess.util.CustomEditText
+            android:id="@+id/paymentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/payment_date"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <in.technitab.ess.util.CustomEditText
+            android:id="@+id/billDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/bill_date"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_term"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <Spinner
+        android:id="@+id/bookingPaymentTerm"
+        style="@style/spinnerUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/due_date"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoCorrect"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/paid_amount"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <in.technitab.ess.util.CustomEditText
+            android:id="@+id/reference_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reference_number"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notes"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

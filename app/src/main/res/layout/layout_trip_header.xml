@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@drawable/ic_section_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:fontFamily="@string/fontFamilyMedium"
+        android:padding="5dp"
+        android:textSize="@dimen/calendarDateTextSize"
+        android:text="@string/more"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/view_more"
+        android:foreground="?android:selectableItemBackground"
+        android:paddingBottom="5dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/headingTextSize" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tripRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+</RelativeLayout>

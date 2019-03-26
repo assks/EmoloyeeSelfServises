@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:text="@string/picker_year_month"
+      android:textSize="@dimen/headingTextSize"
+      android:textStyle="bold" />
+
+  <RelativeLayout
+      android:id="@+id/pickerLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/header"
+      android:gravity="center">
+
+    <NumberPicker
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp" />
+
+    <NumberPicker
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/year" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/pickerLayout"
+      android:padding="10dp">
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="@string/done" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/done"
+        android:background="@android:color/transparent"
+        android:text="@string/cancel" />
+  </RelativeLayout>
+</RelativeLayout>

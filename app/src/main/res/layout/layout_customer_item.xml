@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootLayout"
+    android:background="?android:selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/clientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/travel_distance_edittext"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/headingTextSize" />
+
+    <TextView
+        android:id="@+id/clientLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/travel_distance_edittext"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+</LinearLayout>

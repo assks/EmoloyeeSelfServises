@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/fuelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="@string/date"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/smallTextSize"
+        android:text="@string/type_of_vehicle" />
+
+    <Spinner
+        android:id="@+id/typeVehicleSpinner"
+        style="@style/spinnerUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/userFuelLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from" />
+
+            <Spinner
+                android:id="@+id/fromFuelSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to" />
+
+            <Spinner
+                android:id="@+id/toFuelSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/adminFuelLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/view"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/adminFuelFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/from"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/view"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/adminFuelTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/to"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otherFormFuelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/otherFormFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/other_from_location"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otherToFuelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/otherToFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/to_other_location"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/travel_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/travel_distance_edittext"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/divider1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/mileage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/mileage"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/fuel_bill_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="false"
+            android:hint="@string/bill_amount"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

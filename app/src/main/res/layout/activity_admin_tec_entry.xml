@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="1dp"
+    tools:context=".activity.AdminTecEntryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tecRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/uploadBookingOnTecLaoyut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tecRecyclerView"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bookingRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/uploadBookingOnTec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookingRecyclerView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@string/fontFamilyCondensed"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/upload_on_tec"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/userLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadBookingOnTecLaoyut"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/employee_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/emp_bill" />
+
+            <TextView
+                android:id="@+id/account_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/employee_amount"
+                android:padding="8dp"
+                android:text="@string/acc_bill" />
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/account_amount"
+                android:padding="8dp"
+                android:text="@string/total_amount" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/remarkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_amount"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/remark"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remarkLayout"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/draft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remarkLayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/view"
+                android:background="@drawable/button_bg"
+                android:text="@string/draft"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remarkLayout"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/view"
+                android:background="@drawable/button_bg"
+                android:text="@string/approve"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remarkLayout"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/view"
+                android:background="@drawable/button_bg"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remarkLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/view"
+                android:background="@drawable/button_bg"
+                android:text="@string/paid"
+                android:textAllCaps="false"
+                android:textColor="@color/colorIconText"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

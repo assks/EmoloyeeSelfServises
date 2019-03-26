@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/attachmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sign_date"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/onlyAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_attachment_vector"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/attachment"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/admin_view_only_attachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/attachOnlyFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/attachment"
+            android:src="@drawable/ic_remove_red" />
+
+        <TextView
+            android:id="@+id/onlyEditAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/attachOnlyFile"
+            android:text="@string/attachment"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/attachmentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_text"
+            android:imeOptions="actionDone"
+            android:maxLines="3"
+            android:inputType="textCapSentences"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize"
+            android:theme="@style/MyEditText"
+            tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

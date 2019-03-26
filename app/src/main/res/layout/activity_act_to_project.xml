@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activities"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/headingTextSize" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activityRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableEnd="@drawable/ic_search"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/user_name"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/userRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/submit"
+            android:textColor="@color/colorIconText" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AppPermissionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/allow_access_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/extraHeadingTextSize" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="@string/storage"
+            android:textAllCaps="true"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/headingTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:includeFontPadding="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/storage_suggestion_text"
+            android:textColor="@color/colorDivider"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="@string/camera"
+            android:textAllCaps="true"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/headingTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:includeFontPadding="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/camera_suggestion_text"
+            android:textColor="@color/colorDivider"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="@string/location"
+            android:textAllCaps="true"
+            android:textColor="#ededed"
+            android:textSize="@dimen/headingTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:includeFontPadding="false"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/location_suggestion_text"
+            android:textColor="@color/colorDivider"
+            android:textSize="@dimen/mediumTextSize" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bg"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/let_started"
+        android:textColor="@color/colorIconText" />
+</RelativeLayout>

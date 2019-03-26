@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/existingProjectLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/submit"
+        android:src="@drawable/ic_help_outline" />
+
+    <TextView
+        android:id="@+id/project_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/action_button"
+        android:text="@string/address_detail"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/headingTextSize" />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/project_name"
+        android:fontFamily="@string/fontFamilyLight"
+        android:text="@string/address_detail"
+        android:textColor="@color/colorPrimaryText" />
+</RelativeLayout>

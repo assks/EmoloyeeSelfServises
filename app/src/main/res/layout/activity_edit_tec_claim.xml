@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/ic_section_background"
+    android:orientation="vertical"
+    tools:context=".activity.EditTecClaimActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/claim_type" />
+
+
+        <TextView
+            android:id="@+id/claimSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bottom_line"
+            android:paddingBottom="4dp"
+            android:paddingEnd="2dp"
+            android:paddingStart="2dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize" />
+
+
+        <LinearLayout
+            android:id="@+id/intercity_travel_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_intercity" />
+
+        </LinearLayout>
+
+
+        <!-- 2nd -->
+
+        <LinearLayout
+            android:id="@+id/layoutHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_hotel" />
+
+        </LinearLayout>
+
+        <!-- 3rd -->
+
+        <LinearLayout
+            android:id="@+id/layoutFoodBoardingIem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_food_boarding" />
+        </LinearLayout>
+
+
+        <!-- 4th -->
+        <LinearLayout
+            android:id="@+id/layoutSiteConveyance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_site_conveyance" />
+        </LinearLayout>
+
+        <!-- 5th -->
+
+        <LinearLayout
+            android:id="@+id/mislleniousLaoyut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_mislenious" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fuelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_fuel_mileage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/attachmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_attachment" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconText" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

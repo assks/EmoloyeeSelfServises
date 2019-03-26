@@ -1,0 +1,1044 @@
+<resources>
+    <string name="app_name">Employee Self Service</string>
+    <string name="welcome">Welcome to</string>
+    <string name="allow_access_text">Allow us to access</string>
+    <string name="storage">Storage</string>
+    <string name="storage_suggestion_text">To add and store capture image</string>
+    <string name="camera">Camera</string>
+    <string name="camera_suggestion_text">To capture site location and scan attachment</string>
+    <string name="location">Location</string>
+    <string name="location_suggestion_text">To get site location</string>
+    <string name="let_started">Let\'s get started</string>
+    <string name="next">Next</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="timesheet">Timesheet</string>
+
+
+    <string name="fontFamilyMedium">sans-serif-medium</string>
+    <string name="fontFamilyLight">sans-serif-light</string>
+    <string name="fontFamilyCondensed">sans-serif-condensed</string>
+    <string name="try_again">Try Again</string>
+    <string name="expenses">Expenses</string>
+    <string name="project_task">Projects &amp; Tasks</string>
+    <string name="policies">Policies</string>
+    <string name="faq">FAQ</string>
+    <string name="attendance_leave">Attendances &amp; Leaves</string>
+    <string name="punch_in_out">Punch IN/OUT</string>
+    <string name="vendor">Vendor</string>
+
+    <string name="last_date">1</string>
+
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="navigation_drawer_open">Navigation Open</string>
+    <string name="navigation_drawer_close">Navigation Close</string>
+    <string name="punch_in">Punch IN</string>
+    <string name="punch_out">Punch OUT</string>
+    <string name="project">Project</string>
+    <string name="add_new_entry">Add New Entry</string>
+    <string name="travel_booking">Travel Booking</string>
+    <string name="in">IN</string>
+    <string name="add_task">Add Task</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_continue">Save &amp; Continue</string>
+    <string name="leave">Leave</string>
+    <string name="remainingLeave">Remaining Leaves : </string>
+    <string name="start_date">Start Date *</string>
+    <string name="end_date">End Date *</string>
+    <string name="description">Description (min 30 character) *</string>
+    <string name="request">Request</string>
+    <string name="leave_surety_text">I will insure all project activity are resolved before start leave</string>
+    <string name="date_value">%1$d-%2$s-%3$s</string>
+    <string name="leave_request">Leave Request</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="invalid_lat_long_used">invalid latitude longitude</string>
+    <string name="no_address_found">No address found</string>
+    <string name="time">Time</string>
+    <string name="pending_task">Pending Task</string>
+    <string name="out">OUT</string>
+    <string name="enable">Enable</string>
+    <string name="time_dialog_message">Your time is incorrect, Please switch on the automatic date &amp; date</string>
+    <string name="full_day">Full day</string>
+    <string name="view_more">View more</string>
+    <string name="weekend">Weekend</string>
+    <string name="holiday">Holiday</string>
+    <string name="full_day_present">Present Full Day</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="time_text">%1$s:%2$s</string>
+    <string name="email">Email</string>
+    <string name="first_half">1st half</string>
+    <string name="second_half">2nd half</string>
+    <string name="attendance">Attendance</string>
+    <string name="leave_location_text">Location during leave *</string>
+    <string name="restore_data">Restore Data</string>
+    <string name="finish">Finish</string>
+    <string name="no_location_data_provided">No location data provider</string>
+    <string name="address_found">address found</string>
+    <string name="balance_leave">Leave Balance :</string>
+    <string name="insufficient_balance">Insufficient balance</string>
+    <string name="duration">Duration</string>
+    <string name="half_days">Half Days</string>
+    <string name="daily_summery">Daily Summery</string>
+    <string name="submit">Submit</string>
+    <string name="set_date_value">%1$d-%2$02d-%3$02d</string>
+    <string name="add_timesheet">Add Timesheet</string>
+    <string name="hours_text">0.0</string>
+    <string name="min_hours_value">%1$02d:%2$02d</string>
+    <string name="done">Done</string>
+    <string name="minute">M</string>
+    <string name="hour">H</string>
+    <string name="set_time">Set Time</string>
+    <string name="leaves">Leaves</string>
+    <string name="internet_not_available">Internet not available</string>
+    <string name="server_not_connected">Can\'t connect to server</string>
+    <string name="more_activity">More Activity (max 100)</string>
+    <string name="add">Add</string>
+    <string name="filter">Filter</string>
+    <string name="picker_year_month">Set month &amp; year</string>
+    <string name="no_timesheet_history">No timesheet history found!</string>
+    <string name="month_year_picker">Pick month year</string>
+    <string name="project_view">Project view</string>
+    <string name="date_View">Date View</string>
+    <string name="slow_internet_connection">Slow Internet Connection</string>
+    <string name="no_projet_assigned">No project assigned!</string>
+    <string name="fetch_location">fetching location</string>
+    <string name="admin">Admin</string>
+    <string name="add_project">Add Project</string>
+    <string name="assign_activity">Assign Activity</string>
+    <string name="assign_leaves">Assign Leaves</string>
+    <string name="assign_leave">Assign Leave</string>
+    <string name="approve_leave">Approve Leave</string>
+    <string name="approve_timesheet">Approve timesheet</string>
+    <string name="customer_name">Customer Name *</string>
+    <string name="project_name">Project Name *</string>
+    <string name="billing_type">Billing Type *</string>
+    <string name="budget_amount">Budget Amount</string>
+    <string name="project_type">Project Type *</string>
+    <string name="budget_type">Budget Type *</string>
+    <string name="project_budget_hours">Project Budget Hours *</string>
+    <string name="billable_text">Put tick if part of signed service timesheet. *</string>
+
+
+    <string-array name="halfDaysArray">
+        <item>None</item>
+        <item>All Days</item>
+        <item>Start Day Only</item>
+        <item>End Day Only</item>
+        <item>Start and End Day Only</item>
+    </string-array>
+
+    <string-array name="DurationArray">
+        <item>Full Day</item>
+        <item>1st Half</item>
+        <item>2nd Half</item>
+    </string-array>
+
+
+    <string-array name="halfDurationArray">
+        <item>1st Half</item>
+        <item>2nd Half</item>
+    </string-array>
+
+
+    <string-array name="leaveReasonArray">
+        <item>Sick/Medical</item>
+        <item>Personal Holidays</item>
+        <item>Training/Study</item>
+        <item>Maternity/Paternity</item>
+        <item>Family emergency</item>
+        <item>Bereavement</item>
+    </string-array>
+
+    <string-array name="leaveTypeArray">
+        <item>Earned Leave</item>
+        <item>Leave Without Paid</item>
+        <item>Trainee Leave</item>
+    </string-array>
+
+    <string-array name="yearArray">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string-array name="billingTypeArray">
+        <item>Based on Staff Hours</item>
+        <item>Fix Cost for Project</item>
+        <item>Based on Project Hours</item>
+        <item>Based on Task Hours</item>
+    </string-array>
+
+
+    <string-array name="idProofTypeArray">
+        <item>Aadhar Card</item>
+        <item>PAN Card</item>
+        <item>Voter Id Card</item>
+    </string-array>
+
+    <string-array name="placeSupplyArray">
+        <item>[AN] - Andaman and Nicobar Islands</item>
+        <item>[AD] - Andhra Pradesh</item>
+        <item>[AR] - Arunachal Pradesh</item>
+        <item>[AS] - Assam</item>
+        <item>[BR] - Bihar</item>
+        <item>[CH] - Chandigarh</item>
+        <item>[CG] - Chhattisgarh</item>
+        <item>[DN] - Dadra and Nagar Haveli</item>
+        <item>[DD] - Daman and Diu</item>
+        <item>[DL] - Delhi</item>
+        <item>[GA] - Goa</item>
+        <item>[GJ] - Gujarat</item>
+        <item>[HR] - Haryana</item>
+        <item>[HP] - Himachal Pradesh</item>
+        <item>[JK] - Jammu and Kashmir</item>
+        <item>[JH] - Jharkhand</item>
+        <item>[KA] - Karnataka</item>
+        <item>[KL] - Kerala</item>
+        <item>[LD] - Lakshadweep</item>
+        <item>[MP] - Madhya Pradesh</item>
+        <item>[MH] - Maharashtra</item>
+        <item>[MN] - Manipur</item>
+        <item>[ML] - Meghalaya</item>
+        <item>[MZ] - Mizoram</item>
+        <item>[NL] - Nagaland</item>
+        <item>[OD] - Odisha </item>
+        <item>[PY] - Puducherry</item>
+        <item>[PB] - Punjab</item>
+        <item>[RJ] - Rajasthan</item>
+        <item>[SK] - Sikkim</item>
+        <item>[TN] - Tamil Nadu</item>
+        <item>[TS] - Telangana</item>
+        <item>[TR] - Tripura</item>
+        <item>[UP] - Uttar Pradesh</item>
+        <item>[UK] - Uttarakhand</item>
+    </string-array>
+
+    <string name="fixCost">Fix Cost for Project</string>
+    <string name="activity">activity</string>
+    <string name="activities">Activities</string>
+    <string name="user_name">User Name</string>
+    <string name="no_leave_found">No leave found</string>
+    <string name="rejected">Rejected</string>
+    <string name="pending">Pending</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="approve">Approve</string>
+    <string name="approve_project">Approve Project</string>
+    <string name="change_leave_status">Do you wish to change leave status?</string>
+    <string name="resource">Resources</string>
+    <string name="books">Books</string>
+    <string name="ppts">PPT</string>
+    <string name="pdf">PDF</string>
+    <string name="client_forms">Client forms</string>
+    <string name="fix_assets">Fix Assets</string>
+    <string name="timesheet_dialog">Put a tick box in billable time against all time spent and signed by customer in your service timesheet.</string>
+    <string name="timesheet_ok">All did that. Proceed</string>
+    <string name="timesheet_no">Yet to do go back</string>
+    <string name="assign_timesheet">Assign Timesheet</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact_display_name">Company Name</string>
+    <string name="contact">Contact *</string>
+    <string name="personal_detail">Personal Detail</string>
+    <string name="address_detail">Address Detail</string>
+    <string name="billing_Address">Billing Address</string>
+    <string name="address">Address *</string>
+    <string name="city">City</string>
+    <string name="state">State *</string>
+    <string name="country">Country *</string>
+    <string name="phone">Phone</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="copy_billing_address">Copy billing address</string>
+    <string name="name_of_bank">Name of Vendor\'s Bank *</string>
+    <string name="bank_address">Bank\'s Address *</string>
+    <string name="ifsc_code">IFSC Code *</string>
+    <string name="bank_account_number">Bank Account number *</string>
+    <string name="other_detail">Other Details</string>
+    <string name="gst_treatment">GST Treatment *</string>
+    <string name="place_of_supply">Place of Supply *</string>
+    <string name="payment_term">Payment Term *</string>
+    <string name="gst">GST Number</string>
+    <string name="project_not_found">Project not found</string>
+    <string name="create_new_project">Create New Project</string>
+    <string name="add_tag">Add tag</string>
+    <string name="vendor_detail">Vendor Details</string>
+    <string name="add_vendor">Add Vendor</string>
+    <string name="blank_duration">00:00</string>
+    <string name="can_not_take_leave">Can\'t take leave</string>
+    <string name="remove_decimal">%1$.0f</string>
+    <string name="project_profitability">Project Profitability : %1$s</string>
+    <string name="document_submission_form">5. Document submission form</string>
+    <string name="reporting_to">Reporting To</string>
+    <string name="attachment_list">Attachments</string>
+    <string name="bank_passbook">Copy of bank passbook/cheque</string>
+    <string name="reject">Reject</string>
+    <string name="gender">Gender</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="nationality">Nationality</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="father">Father</string>
+    <string name="joining_date">Joining Date</string>
+    <string name="appointment_date">Appointment Date</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="official_email">Official Email</string>
+    <string name="personal_email">Personal Email</string>
+    <string name="emergency_number">Emergency Number</string>
+    <string name="emp_designation">%1$d | %2$s</string>
+    <string name="education_description">%1$s | %2$s | %3$s</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="dl">Driving License Number</string>
+    <string name="voter_id_number">Voter Id Number</string>
+    <string name="account_numer">Account Number</string>
+    <string name="current_address">Current Address</string>
+    <string name="contact_detail_address">Contact Detail</string>
+    <string name="eduational_detail">Education Detail</string>
+    <string name="user_profile">User Profile</string>
+    <string name="tec">TEC</string>
+    <string name="bill_num">Bill number</string>
+    <string name="nights">Nights</string>
+    <string name="rate">Rate</string>
+    <string name="city_hotel">City,hotel</string>
+    <string name="actual">Actuals</string>
+    <string name="description_text">Description</string>
+    <string name="no_history_found">No history Found</string>
+    <string name="tec_admin_description">Trip: %1$d | Tec: %2$d | %3$s | %4$.2f</string>
+    <string name="pay_vendor_description">%1$s | %2$s | %3$.2f</string>
+    <string name="draft">Draft</string>
+    <string name="paid">Paid</string>
+    <string name="misc_description">%1$s | %2$s | %3$.2f</string>
+    <string name="employee">Employee</string>
+    <string name="emp_bill">Employee paid : %1$.2f</string>
+    <string name="acc_bill">Accounts paid : %1$.2f</string>
+    <string name="tec_entry">TEC Entry</string>
+    <string name="tec_claim">TEC Claim</string>
+    <string name="bill_date">Bill Date</string>
+    <string name="paid_by">Paid By</string>
+    <string name="account">Account</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="attachment">Attachment</string>
+    <string name="claim_type">Entry Type</string>
+    <string name="mode">Mode</string>
+    <string name="date_text">%1$d-%2$02d-%3$02d</string>
+    <string name="invalid_file">Invalid file</string>
+    <string name="invalid_file_size">Invalid file size</string>
+    <string name="bill_attached">Bill attached</string>
+    <string name="create_tec">Create TEC</string>
+    <string name="tec_user_description">Trip: %1$d Tec: | %2$.2f</string>
+    <string name="project_type_customer">%1$s | %2$s</string>
+    <string name="project_type_view_customer">%1$s | %2$s | %3$s</string>
+    <string name="no_more_project">No more project</string>
+    <string name="canceled">Canceled</string>
+    <string name="item">%1$d Item</string>
+    <string name="pay_period">Pay Period :</string>
+    <string name="pay_day">Pay day :</string>
+    <string name="employee_code">Employee Code :</string>
+    <string name="designation">Designation :</string>
+    <string name="esic">ESIC Number :</string>
+    <string name="pf_num">PF Number :</string>
+    <string name="earning">Earning</string>
+    <string name="gross_monthly_ctc">Gross monthly Ctc</string>
+    <string name="gross_payable">Gross payable</string>
+    <string name="basic">Basic</string>
+    <string name="hra">House rent allowance</string>
+    <string name="ca">Conveyance Allowance</string>
+    <string name="ma">Medical Allowance</string>
+    <string name="sa">Special Allowance</string>
+    <string name="lta">Leave travel Allowance</string>
+    <string name="education_allowance">Education Allowance</string>
+    <string name="claim_text">To be claimed via Reimbursements form</string>
+    <string name="other_allowance">Other Allowance</string>
+    <string name="arrears_payment">Arrears Payment</string>
+    <string name="gross_total">Gross Total</string>
+    <string name="deduction">Deductions</string>
+    <string name="amount">Amount</string>
+    <string name="provident_fund">Provident Fund</string>
+    <string name="esic_text">ESIC</string>
+    <string name="insur_medi">Insur/ Medi Benefits</string>
+    <string name="income_tax">Income Tax</string>
+    <string name="professional_tax">Professional Tax</string>
+    <string name="total_deduction">Total Deduction</string>
+    <string name="net_amount_payable">Net Amount Payable : %1$s</string>
+    <string name="pan_num_text">PAN Number :</string>
+    <string name="payment_slip">Payment Slip for %1$s</string>
+    <string name="dash">_</string>
+    <string name="name">Name :</string>
+    <string name="problem_to_connect">Problem to connect to server</string>
+    <string name="salary_slip">Salary Slip</string>
+    <string name="calc_month_days">Calc month days:</string>
+    <string name="available_leave">Available Leave (EL)</string>
+    <string name="lwp">LWP/ NJ Days</string>
+    <string name="availed_el">Availed EL this month</string>
+    <string name="present_days">Present Days</string>
+    <string name="balance_el">Balance Leave :</string>
+    <string name="total_payable_day">Total Payable Days :</string>
+    <string name="current_el">Current EL (Bal+new)</string>
+    <string name="advance_claim_text">Advance/Loan</string>
+    <string name="base_location">Base Location</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="departure_time">Departure Time</string>
+    <string name="arrival_date">Arrival Date</string>
+    <string name="arrival_time">Arrival Time</string>
+    <string name="add_save">Add</string>
+    <string name="comment">Comment</string>
+    <string name="leave_id">leave id</string>
+    <string name="successfully_saved">Successfully Saved</string>
+    <string name="successfully_updated">Successfully Updated</string>
+    <string name="update">Update</string>
+    <string name="update_project">Update Project</string>
+    <string name="approve_leave_date">%1$s - %2$s</string>
+    <string name="requested_project">Requested Project</string>
+    <string name="retry">Retry</string>
+    <string name="approve_project_text">Approve Project</string>
+    <string name="submittted_tec">Submitted TEC</string>
+    <string name="approve_vendor">Approve Vendor</string>
+    <string name="approve_tec_text">Approve Tec</string>
+    <string name="submitted_tec">Submitted TEC</string>
+    <string name="submit_vendor">Submit Vendor</string>
+    <string name="search">Search</string>
+    <string name="payroll">Payroll</string>
+    <string name="search_hint">City,district</string>
+    <string name="district">District *</string>
+    <string name="pay_vendor">Pay Vendor</string>
+    <string name="vendor_name">Vendor Name</string>
+    <string name="from_date">From date</string>
+    <string name="to_date">To date</string>
+    <string name="total_amount">Total amount</string>
+    <string name="set_vendor_name_id">%1$s, %2$d</string>
+    <string name="set_update_vendor_name_id">%1$s, %2$d</string>
+    <string name="vendor_pay_detail">%1$s, %2$s, %3$s, %4$s</string>
+    <string name="approved">Approved</string>
+    <string name="approve_pay_vendor">Approve Pay Vendor</string>
+    <string name="submit_pay_vendor">Submit Pay vendor</string>
+    <string name="update_vendor">Update Vendor</string>
+    <string name="view_vendor_detail">View Vendor Detail</string>
+    <string name="vendor_type">Vendor Type*</string>
+    <string name="project_location">Project Location*</string>
+    <string name="submitted">Submitted</string>
+    <string name="added">Added</string>
+    <string name="fill_at_least_one">Fill At least one in these above fields</string>
+    <string name="holder_name">Bank Account Holder\'s Name *</string>
+    <string name="click_here">Click here to view attachments</string>
+    <string name="pay_vendor_user_description">%1$s | %2$.2f</string>
+    <string name="client_name">Client Name *</string>
+    <string name="estimated_end_date">Estimated End Date *</string>
+    <string name="scope_work">Scope of work as per job action sheet (min 50) *</string>
+    <string name="estimated_days">Estimated number of days for the scope *</string>
+    <string name="job_action_sheet">Job Allocation Sheet</string>
+    <string name="system_backup">System Backup</string>
+    <string name="claim_travel_date">Claim Start Date</string>
+    <string name="tec_claim_start_end">%1$s to %2$s</string>
+    <string name="choose_project">Choose project for TEC</string>
+    <string name="site_location">Site location</string>
+    <string name="i_got_following">I already got the following.</string>
+    <string name="filled_tec">Filled TEC - %1$d</string>
+    <string name="fill">Fill</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="food_day_edittext">Days as per service timesheet</string>
+    <string name="service_timesheet">Service Timesheet</string>
+    <string name="site_days_edittext">Days of travel from hotel to site</string>
+    <string name="site_actual_edittext">Detail description and breakup of daily cost</string>
+    <string name="vendor_edittext">Vendor</string>
+    <string name="type_of_vehicle">Type of vehicle</string>
+    <string name="travel_distance_edittext">Travel distance (Km)</string>
+    <string name="mileage">Mileage</string>
+    <string name="registered_business">Registered Business - Regular</string>
+    <string name="intercity_restriction_text">Mandatory original bills or scanned form</string>
+    <string name="food_restriction_text">Mandatory service timesheet.</string>
+    <string name="hotel_restriction_text">Mandatory original bills or scanned form</string>
+    <string name="misc_restriction_text">Mandatory original bills or scanned form</string>
+    <string name="other">Other</string>
+    <string name="travel_end_date">Claim End Date</string>
+    <string name="user_note">User Notes (Min 50 chars)</string>
+    <string name="accounts">Accounts</string>
+    <string name="kilometer_value">%1$.2f</string>
+    <string name="four_wheeler">7</string>
+    <string name="two_wheeler">3.5</string>
+    <string name="blank_date">0000-00-00</string>
+    <string name="create">Create</string>
+
+    <string name="service_sheet_warning">You have not attached service timesheet hence your tec might be rejected. If service timesheet mandatory by client for this travel</string>
+    <string name="proceed">Continue</string>
+    <string name="submit_warning"><![CDATA[ <br>You have not submitted one or all of the following attachment in your entries.</br><br></br>
+        <br>\u2022 Minutes of Meeting</br>
+       <br>\u2022 Service Timesheet</br>
+        <br>\u2022 Feedback Form</br>
+        <br>\u2022 SAT Report</br>
+        <br>\u2022 CheckLists</br>
+        <p>Your Tec might be rejected if these are mandatory by the client for this project</p></font>
+        ]]>
+    </string>
+    <string name="fill_tec">Fill Tec</string>
+
+    <string-array name="projectTypeArray">
+        <item>RTU</item>
+        <item>PAS</item>
+        <item>CRP</item>
+        <item>Web</item>
+        <item>Mobile</item>
+        <item>HR</item>
+        <item>Digital Marketing</item>
+        <item>Non Project work</item>
+        <item>NP HR work</item>
+        <item>NP Admin work</item>
+        <item>NP Accounts work</item>
+    </string-array>
+
+
+    <string-array name="paymentTermArray">
+        <item>Due on Receipt</item>
+        <item>Net 30</item>
+        <item>Net 15</item>
+        <item>Net 45</item>
+        <item>Net 60</item>
+        <item>Due end of the month</item>
+        <item>Due end of the next month</item>
+    </string-array>
+
+
+    <string-array name="gstArray">
+        <item>Registered Business - Regular</item>
+        <item>Unregistered Business</item>
+    </string-array>
+
+    <string-array name="typeVehicleArray">
+        <item>2 wheeler</item>
+        <item>4 wheeler</item>
+    </string-array>
+
+
+    <string-array name="bookingTravelModeArray">
+        <item>Hotel/PG/Lodge</item>
+        <item>Guesthouse</item>
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Flight</item>
+    </string-array>
+
+    <string-array name="travelTypeArray">
+        <item>Onward Journey</item>
+        <item>Intermediate Journey</item>
+        <item>Return Journey</item>
+    </string-array>
+
+    <string-array name="tecCategoryArray">
+        <item>Intercity Travel cost</item>
+        <item>Food - Boarding - Per Diem</item>
+        <item>Local Travel - Public transport</item>
+        <item>Miscellaneous</item>
+        <item>Repairs and Maintenance</item>
+        <item>Intl Travel Insurance</item>
+        <item>Fuel/Mileage Expenses - Own transport</item>
+        <item>Lodging - Hotels</item>
+        <item>Fixed Asset</item>
+        <item>Minutes of Meeting</item>
+        <item>Service Timesheet</item>
+        <item>Feedback Form</item>
+        <item>SAT Report</item>
+        <item>Checklists</item>
+    </string-array>
+
+    <string-array name="tecCategoryAdminArray">
+        <item>Intercity Travel cost</item>
+        <item>Miscellaneous</item>
+        <item>Repairs and Maintenance</item>
+        <item>Intl Travel Insurance</item>
+        <item>Lodging - Hotels</item>
+    </string-array>
+
+
+    <string-array name="newTecCategoryArray">
+        <item>Intercity Travel cost</item>
+        <item>Food - Boarding - Per Diem</item>
+        <item>Miscellaneous</item>
+        <item>Repairs and Maintenance</item>
+        <item>Intl Travel Insurance</item>
+        <item>Fuel/Mileage Expenses - Own transport</item>
+        <item>Lodging - Hotels</item>
+        <item>Fixed Asset</item>
+        <item>Minutes of Meeting</item>
+        <item>Service Timesheet</item>
+        <item>Feedback Form</item>
+        <item>SAT Report</item>
+        <item>Checklists</item>
+    </string-array>
+
+    <string name="intercity_travel">Intercity Travel cost</string>
+    <string name="per_diem">Food - Boarding - Per Diem</string>
+    <string name="misc">Miscellaneous</string>
+    <string name="repair_maintenance">Repairs and Maintenance</string>
+    <string name="intl_travel">Intl Travel Insurance</string>
+    <string name="fuel_expense">Fuel/Mileage Expenses - Own transport</string>
+    <string name="lodging">Lodging - Hotels</string>
+    <string name="fix_asset">Fixed Asset</string>
+    <string name="local_travel">Local Travel - Public transport</string>
+    <string name="id_proof_type">Id Proof Type</string>
+    <string name="id_proof_file">ID Proof</string>
+    <string name="id_proof_num">Id Proof Number *</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="mandatory_address">Address *</string>
+    <string name="mandatory_city">City *</string>
+    <string name="mandatory_state">State *</string>
+    <string name="mandatory_pin_code">Pin Code *</string>
+    <string name="mandatory_country">Country *</string>
+    <string name="mandatory_phone">Phone *</string>
+    <string name="rate_daily">Per night rate *</string>
+    <string name="hotel">Hotel</string>
+    <string name="open">open</string>
+    <string name="remark">Remark</string>
+    <string name="tec_total_amount">Total amount : %1$.2f</string>
+    <string name="city_hotel_value">%1$s, %2$s</string>
+    <string name="user_note_value">User Note : %1$s</string>
+    <string name="admin_note">Comment : %1$s</string>
+    <string name="payment_mode">Payment Mode *</string>
+    <string name="bank">Bank</string>
+    <string name="cash">Cash</string>
+    <string name="or_and">OR/AND</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="to_other_location">To other location</string>
+    <string name="other_from_location">Other from location</string>
+    <string name="contact_zoho_name">- %1$04d</string>
+    <string name="submit_project">Submit Project</string>
+    <string name="food_description">%1$s | %2$.02f * %3$.02f | %4$.02f</string>
+    <string name="check_out_date">Check Out Date *</string>
+    <string name="check_in_date">Check In Date *</string>
+    <string name="save_pdf">Save PDF</string>
+    <string name="convert_pdf">Covert PDF</string>
+    <string name="trip_member">Member *</string>
+    <string name="submit_trip">Create Trip</string>
+    <string name="update_trip">Update Trip</string>
+    <string name="trip_user_description">Trip - %1$d</string>
+    <string name="trip_admin_description">Trip - %1$d | %2$s</string>
+    <string name="delete">Delete</string>
+    <string name="delete_message">Do you want to delete trip?</string>
+    <string name="no_booking_history_found">No booking history found</string>
+    <string name="trip">Trip</string>
+    <string name="city_area">City/Area *</string>
+    <string name="travel_type">Travel Type *</string>
+    <string name="travel_mode">Travel Mode *</string>
+    <string name="reference_number">Reference Number</string>
+    <string name="notes">Notes</string>
+    <string name="payment_date">Payment Date</string>
+    <string name="user_trip">User Trip</string>
+    <string name="instruction">Instruction/Preference</string>
+    <string name="trip_detail">Trip Detail</string>
+    <string name="admin_vendor">Vendor *</string>
+    <string name="admin_room">Room *</string>
+    <string name="admin_total_amount">Total Amount *</string>
+    <string name="pick_vendor">Pick vendor</string>
+    <string name="rate_per_night">Rate Per Night *</string>
+    <string name="travel_booking_menu">Travel: Trips</string>
+    <string name="expand_view">Expand view</string>
+    <string name="request_attendance">Request Attendance</string>
+    <string name="default_country">India</string>
+    <string name="no_customer">No customer</string>
+    <string name="find_project">Find Project</string>
+
+    <string-array name="tecAttachmentArray">
+        <item>Fixed Asset</item>
+        <item>Minutes of Meeting</item>
+        <item>Service Timesheet</item>
+        <item>Feedback Form</item>
+        <item>SAT Report</item>
+        <item>Checklists</item>
+    </string-array>
+
+    <string-array name="travelModeArray">
+        <item>Train</item>
+        <item>Cab</item>
+        <item>Metro</item>
+        <item>Auto</item>
+        <item>Bus</item>
+        <item>Flight</item>
+    </string-array>
+
+    <string-array name="vendorTypeArray">
+        <item>Hotel</item>
+        <item>Admin</item>
+        <item>Information Technology</item>
+        <item>Fixed Assets</item>
+        <item>Travel</item>
+        <item>Freelancer</item>
+        <item>Miscellaneous</item>
+
+    </string-array>
+
+
+    <string-array name="stateArray">
+        <item>Andaman And Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra And Nagar Haveli</item>
+        <item>Daman And Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu And Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Puducherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+
+
+    <string-array name="countryArray">
+        <item>India</item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cabo Verde</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo (Congo-Brazzaville)</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Greece</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Holy See</item>
+        <item>Honduras</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macedonia (FYROM)</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar (formerly Burma)</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>North Korea</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Palestine State</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Tuvalu</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States of America</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Viet Nam</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+
+    <string-array name="paidViaArray">
+        <item>Cash</item>
+        <item>Paytm</item>
+        <item>GooglePay</item>
+    </string-array>
+
+    <string-array name="privacyPolicyArray">
+        <item name="term_appointments">1. Terms of appointment</item>
+        <item name="attendance_leave_policy">2. Attendance &amp; leave policy</item>
+        <item name="travel_policy">3. Employee travel &amp; expense policy</item>
+        <item name="performance_policy">4. Performance review policy</item>
+        <item name="document_submission_form">5. Document submission form</item>
+        <item name="travel_expense_claim_form">6. Travel expense claim form</item>
+        <item name="payee_registration_form">7. Payee registration form</item>
+        <item name="asset_acknowledgement_form">8. Asset acknowledgement form</item>
+        <item name="return_of_company_asset_form">9. Return of company asset form</item>
+        <item name="laptop_receive_form">10. Laptop receive form</item>
+        <item name="employee_exit_form">11. Employee exit form</item>
+        <item name="employee_exit_questionnaire_form">12. Employee exit questionnaire form</item>
+    </string-array>
+
+
+    <string name="rent">Rent</string>
+    <string name="check_in_out">%1$s to %2$s</string>
+    <string name="booking_dates">Booking Dates</string>
+    <string name="reporting_date">Reporting Date *</string>
+    <string name="service_charge">+ Service Charge</string>
+    <string name="service_charge_percent">Tax Percent</string>
+    <string name="online">Online</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="office">Office</string>
+    <string name="self">Self</string>
+    <string name="bill_total_amount">Total Amount</string>
+    <string name="total_rent">Total Rent *</string>
+    <string name="tax_amount">Tax Amount</string>
+    <string name="service_charge_amount">Service Charge Amount</string>
+    <string name="total_fair">Total Fare</string>
+    <string name="initiated">Initiated</string>
+    <string name="trip_reference">%1$d-%2$s-%3$s</string>
+    <string name="trip_tec_lable">Trip %1$d: TECs</string>
+    <string name="default_date">0000-00-00</string>
+    <string name="project_request">Project Assigning Request</string>
+    <string name="request_project_message">Do you want to request this project to assign?</string>
+    <string name="skip">Skip</string>
+    <string name="payment">Payment</string>
+    <string name="booking_request">Booking Request</string>
+    <string name="self_booking">Self Booking</string>
+    <string name="app_version">App Version %1$s</string>
+    <string name="hotel_booking_mode">Hotel/PG/Lodge</string>
+    <string name="booking_train">Train</string>
+    <string name="booking_bus">Bus</string>
+    <string name="booking_flight">Flight</string>
+    <string name="food_non_working_day_edittext">Non working days</string>
+    <string name="select_state">Select State</string>
+    <string name="nav_travel_booking">Travel</string>
+    <string name="nav_project_activities">Project &amp; Activities</string>
+    <string name="nav_task_todo_list">Task &amp; To Do List</string>
+    <string name="trip_bookings">Trip: Bookings</string>
+    <string name="trip_tecs">Trip: TECs</string>
+    <string name="table_trip_bookings">Tip %1$d: Bookings</string>
+    <string name="more">More</string>
+    <string name="single_room">1</string>
+    <string name="guesthouse_vendor">Guesthouse</string>
+    <string name="guesthouse_per_night_rate">100</string>
+    <string name="trip_booking_requested">Booking Requested</string>
+    <string name="booking_guesthouse">Guesthouse</string>
+    <string name="user_trip_description">Bid: %1$d | %2$s %3$s</string>
+    <string name="onward_journey">Onward Journey</string>
+    <string name="intermediate_journey">Intermediate Journey</string>
+    <string name="double_value">%1$.02f</string>
+    <string name="booking">Booking</string>
+    <string name="bookings">Bookings</string>
+    <string name="total_night">Total nights: %1$d days</string>
+    <string name="date_time">%1$s %2$s</string>
+    <string name="booking_request_title">%1$s %2$s</string>
+    <string name="booking_request_hotel_sub_heading">%1$s | %2$s | %3$s | Room - %4$d</string>
+    <string name="booking_request_bus_sub_heading">%1$s | %2$s | %3$s</string>
+    <string name="booking_entry">Booking Entry</string>
+    <string name="payment_entry">Payment Entry</string>
+    <string name="booking_mode">Booking Mode *</string>
+    <string name="sign_date">Sign date</string>
+    <string name="stay_mode">Stay Mode</string>
+    <string name="guesthouse">Guesthouse</string>
+    <string name="billable_tec_text">Is Service timesheet billable ?</string>
+    <string name="other_city">Other City</string>
+    <string name="metro">Metro</string>
+    <string name="non_metro">Non Metro</string>
+    <string name="ncr">NCR</string>
+    <string name="quantity">Quantity</string>
+    <string name="mandatory_district">District*</string>
+    <string name="shipping_district">District</string>
+    <string name="shipping_address_text">Address</string>
+    <string name="shipping_country">Country</string>
+    <string name="shipping_state">State</string>
+    <string name="select_country">Select Country</string>
+    <string name="international">International</string>
+    <string name="customer_list">Customer</string>
+    <string name="delete_tec_entry_message">Do you want to delete tec entry?</string>
+    <string name="integer_value">%1$.0f</string>
+    <string name="non_rate_per_diem">Rate Per Diem</string>
+    <string name="user">user</string>
+    <string name="payment_request">Payment Request</string>
+    <string name="payment_done">Payment Done</string>
+    <string name="payment_done_message">Have you done payment for this booking?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="payment_request_message">Do you want to send payment request for this booking?</string>
+    <string name="view_attachment">View Atachment</string>
+    <string name="upload_on_tec">Upload on tec</string>
+    <string name="booking_bill">Booking Bill</string>
+    <string name="approve_tec_message">Draft invoice has been made in Zoho and submitted to client for this TEC.</string>
+    <string name="paid_tec_message">Final invoice has been approved by client for this TEC.</string>
+    <string name="payroll_salary_approve_message">No TEC in draft or submit state and ALT report cross-checked for the pay period.</string>
+    <string name="notifications">Notifications</string>
+    <string name="due_date">Due Date</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="booking_availability">I have confirmed avialbility of bed with guesthouse Admin.</string>
+    <string name="guesthouse_rules"><![CDATA[I understand the guesthouse rules & would comply with same.]]></string>
+
+</resources>

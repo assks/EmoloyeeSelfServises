@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_section_background"
+    tools:context=".activity.AttachBillActivity">
+
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondary"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/bookingMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondary"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/extraHeadingTextSize" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondary"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/subMediumTextSize" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/headerLayout"
+        android:background="@color/colorDivider" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/viewAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:contentDescription="@string/view_attachment"
+            android:src="@drawable/ic_remove_red" />
+
+        <TextView
+            android:id="@+id/attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/viewAttachment"
+            android:layout_centerVertical="true"
+            android:drawableEnd="@drawable/ic_check_circle"
+            android:padding="8dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/submit"
+        android:textColor="@color/colorIconText" />
+
+</RelativeLayout>

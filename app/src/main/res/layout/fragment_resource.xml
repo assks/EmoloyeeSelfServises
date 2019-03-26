@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_section_background"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    tools:context=".fragment.ResourceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/policies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/policies" />
+
+            <Button
+                android:id="@+id/fixAsset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/fix_assets" />
+
+
+            <Button
+                android:id="@+id/salarySlip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/salary_slip" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/ppt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/ppts" />
+
+            <Button
+                android:id="@+id/pdf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/pdf" />
+
+
+            <Button
+                android:id="@+id/approve_leave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/client_forms" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/frequency_ask_question"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/faq" />
+
+            <Button
+                android:id="@+id/books"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/books" />
+
+
+            <Button
+                android:id="@+id/guesthouseBooking"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/smallTextSize"
+                   android:layout_marginRight="@dimen/smallTextSize"
+                   android:maxLines="1"
+                   android:ellipsize="end"
+                   android:layout_weight="1"
+                   android:background="?android:selectableItemBackground"
+                   android:drawablePadding="10dp"
+                   android:drawableTop="@mipmap/attendance_hrs"
+                   android:text="@string/guesthouse" />
+
+
+
+
+        </LinearLayout>
+
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/salary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/add_project" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/assign_project" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:text="@string/assign_activity" />
+
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+</ScrollView>

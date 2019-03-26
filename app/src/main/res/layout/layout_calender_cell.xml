@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/calendar_cell_bg"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/calendar_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@string/fontFamilyMedium"
+        android:includeFontPadding="false"
+        android:text="@string/last_date"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/punch_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/calendarHoursTextSize" />
+
+    <TextView
+        android:id="@+id/punch_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/calendarHoursTextSize" />
+
+
+</LinearLayout>

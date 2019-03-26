@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="in.technitab.ess.util.DateCal" />
+
+        <variable
+            name="booking"
+            type="in.technitab.ess.model.GuesthouseBooking">
+
+        </variable>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circluler_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/travelType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLength="1"
+                android:text="@{booking.status}"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/titleTextSize" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dateLayout"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="4dp"
+            android:text="@{String.format(@string/check_in_out,DateCal.convertDateToDM(booking.checkIn),DateCal.convertDateToDM(booking.checkOut))}"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dates"
+            android:layout_toEndOf="@id/dateLayout"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@{String.valueOf(booking.rent)}"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/mediumTextSize" />
+
+    </RelativeLayout>
+</layout>

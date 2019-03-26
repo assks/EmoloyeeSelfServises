@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        android:text="@string/sign_date"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/attachmentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="4dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize" />
+
+
+    <TextView
+        android:id="@+id/onlyAttachment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:drawableStart="@drawable/ic_remove_red"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/attachment"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        android:text="@string/description_text"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/calendarDateTextSize" />
+
+    <TextView
+        android:id="@+id/attachmentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/marginBetweenField"
+        android:background="@drawable/bottom_line"
+        android:paddingBottom="4dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize" />
+</LinearLayout>

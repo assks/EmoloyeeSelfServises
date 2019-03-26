@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ApproveProjectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ic_section_background"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/clientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/client_name"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/customer_name"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/project_name"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/project_type" />
+
+        <Spinner
+            android:id="@+id/project_type"
+            style="@style/spinnerUnderline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/country"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/state"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <in.technitab.ess.util.CustomEditText
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/district"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/project_location"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/billing_type" />
+
+
+        <Spinner
+            android:id="@+id/billing_type"
+            style="@style/spinnerUnderline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/project_cost_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/budget_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/budget_amount"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/budget_type"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/budget_type"
+            style="@style/spinnerUnderline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="gone" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/project_budget_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/project_budget_hours"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/start_date"
+                android:inputType="datetime"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:focusable="false"
+                android:hint="@string/estimated_end_date"
+                android:inputType="datetime"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/scope_work"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/estimated_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/estimated_days"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:textSize="@dimen/mediumTextSize"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/i_got_following"
+            android:textColor="@color/colorPrimaryText" />
+
+        <CheckBox
+            android:id="@+id/job_action_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/job_action_sheet" />
+
+        <CheckBox
+            android:id="@+id/system_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/system_backup" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/submit"
+            android:textColor="@color/colorIconText" />
+
+    </LinearLayout>
+
+</ScrollView>

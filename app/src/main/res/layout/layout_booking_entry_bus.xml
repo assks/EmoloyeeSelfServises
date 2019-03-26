@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/divider"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <EditText
+          android:id="@+id/from"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/from"
+          android:imeOptions="actionNext"
+          android:nextFocusRight="@id/to"
+          android:inputType="textCapSentences"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/divider"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <EditText
+          android:id="@+id/to"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/to"
+          android:imeOptions="actionDone"
+          android:inputType="textCapSentences"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp">
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/divider1"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <EditText
+          android:id="@+id/departureDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:hint="@string/departure_date"
+          android:imeOptions="actionDone"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/divider1"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <EditText
+          android:id="@+id/departureTime"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:hint="@string/departure_time"
+          android:imeOptions="actionDone"
+          android:inputType="none"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp">
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/divider2"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <EditText
+          android:id="@+id/arrivalDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:hint="@string/arrival_date"
+          android:imeOptions="actionDone"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/divider2"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <EditText
+          android:id="@+id/arrivalTime"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:hint="@string/arrival_time"
+          android:imeOptions="actionDone"
+          android:inputType="none"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+  </RelativeLayout>
+
+  <!-- <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="2dp"
+       android:layout_marginRight="2dp"
+       android:layout_marginTop="8dp"
+       android:text="@string/trip_member"
+       android:textColor="@color/colorSecondaryText"
+       android:textSize="@dimen/calendarDateTextSize" />
+
+   <LinearLayout
+       android:id="@+id/travelUsersLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:orientation="vertical" />-->
+
+  <android.support.design.widget.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:hintTextAppearance="@style/MyHintText">
+
+    <in.technitab.ess.util.CustomEditText
+        android:id="@+id/busVendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="@string/vendor"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize"
+        android:theme="@style/MyEditText" />
+
+  </android.support.design.widget.TextInputLayout>
+
+  <android.support.design.widget.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      app:hintTextAppearance="@style/MyHintText">
+
+    <in.technitab.ess.util.CustomEditText
+        android:id="@+id/busAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/total_fair"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/mediumTextSize"
+        android:theme="@style/MyEditText" />
+
+  </android.support.design.widget.TextInputLayout>
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/view"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/service_charge_percent"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="@dimen/calendarDateTextSize" />
+
+      <Spinner
+          android:id="@+id/bookingTaxPercent"
+          style="@style/spinnerUnderline"
+          android:layout_width="match_parent"
+          android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/view"
+        android:layout_marginTop="4dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <in.technitab.ess.util.CustomEditText
+          android:id="@+id/bookingTaxAmount"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:focusable="false"
+          android:hint="@string/tax_amount"
+          android:imeOptions="actionDone"
+          android:inputType="numberDecimal"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+  </RelativeLayout>
+
+  <TextView
+      android:id="@+id/busServiceCharge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/button_bg"
+      android:padding="8dp"
+      android:text="@string/service_charge"
+      android:textColor="@color/colorIconText" />
+
+  <LinearLayout
+      android:id="@+id/busServiceChargeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:baselineAligned="false"
+      android:orientation="horizontal"
+      android:visibility="visible"
+      android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/service_charge_percent"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="@dimen/calendarDateTextSize" />
+
+      <Spinner
+          android:id="@+id/busServiceTaxPercent"
+          style="@style/spinnerUnderline"
+          android:layout_width="match_parent"
+          android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        app:hintTextAppearance="@style/MyHintText">
+
+      <in.technitab.ess.util.CustomEditText
+          android:id="@+id/busServiceChargeSubAmount"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/service_charge_amount"
+          android:imeOptions="actionDone"
+          android:inputType="number"
+          android:maxLines="1"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize"
+          android:theme="@style/MyEditText"
+          tools:ignore="TextFields" />
+
+    </android.support.design.widget.TextInputLayout>
+
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/busTotalItemAmountLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="@color/colorAmountBg"
+      android:padding="8dp">
+
+
+    <TextView
+        android:id="@+id/hotelBillTotalAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_rupee_circle"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/bill_total_amount"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/subMediumTextSize" />
+
+    <TextView
+        android:id="@+id/billTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/hotelBillTotalAmountText"
+        android:maxLines="1"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/subMediumTextSize" />
+
+  </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="1dp"
+    android:id="@+id/rootLayout"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/ic_section_background"
+    tools:context=".fragment.PayrollFragment">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:scrollbars="none"
+            android:stretchColumns="*">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/payment_month"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize" />
+
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:stretchColumns="1,3">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_table_rectange"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:text="@string/pay_period"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/payperiod"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:padding="5dp"
+                        android:text="@string/pay_day"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/pay_day"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_table_rectange"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/name"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/employee_code"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/employee_code"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/designation"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/designation"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/pan_num_text"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/pan_num"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/esic"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/esic"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/pf_num"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/pf_num"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_table_rectange"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/calc_month_days"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/calc_month_days"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/available_leave"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/available_leave"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/lwp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/lwp"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/availed_el"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/availed_el"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:gravity="start"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/present_days"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/present_days"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/balance_el"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/balance_el"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:text="@string/total_payable_day"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/total_payable_day"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:text="@string/current_el"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                    <TextView
+                        android:id="@+id/current_el"
+                        android:layout_gravity="start"
+                        android:fontFamily="@string/fontFamilyLight"
+                        android:gravity="start"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/calendarDateTextSize" />
+
+                </TableRow>
+            </TableLayout>
+            <!-- row3 -->
+
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_table_rectange"
+                        android:scrollbars="none">
+
+                        <!-- first -->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingTop="5dp">
+
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:text="@string/earning"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/mediumTextSize" />
+
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:gravity="center"
+                                android:paddingEnd="20dp"
+                                android:paddingStart="20dp"
+                                android:text="@string/gross_monthly_ctc"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/mediumTextSize" />
+
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:gravity="center"
+                                android:text="@string/gross_payable"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/mediumTextSize" />
+                        </TableRow>
+
+                        <!-- second -->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+
+                            <TextView
+                                android:text="@string/basic"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/gross_basic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_basic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+
+                            <TextView
+                                android:text="@string/hra"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/gross_hra"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_hra"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/ca"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_ca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_ca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+
+                            <TextView
+                                android:text="@string/ma"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_ma"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_ma"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+
+                            <TextView
+                                android:text="@string/sa"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_sa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_sa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/lta"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_lta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:text="@string/dash"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_lta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            tools:ignore="TooManyViews">
+
+                            <TextView
+                                android:text="@string/education_allowance"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/ctc_ea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:text="@string/dash"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_ea"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:text="@string/claim_text"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <!-- special -->
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+
+                            <TextView
+                                android:text="@string/other_allowance"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_oa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:text="@string/dash"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/ctc_oa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/arrears_payment"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/gross_ap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/ctc_ap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:text="@string/gross_total"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/ctc_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+
+                            <TextView
+                                android:id="@+id/gross_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/ic_table_rectange"
+                        android:scrollbars="none">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:paddingEnd="40dp"
+                                android:paddingStart="40dp"
+                                android:text="@string/deduction"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/mediumTextSize" />
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:paddingEnd="40dp"
+                                android:paddingStart="40dp"
+                                android:text="@string/amount"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/mediumTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/provident_fund"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize"
+                                tools:ignore="TooManyViews" />
+
+                            <TextView
+                                android:id="@+id/pf_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/esic_text"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/esic_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/insur_medi"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/insure_medi_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/advance_claim_text"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/advance_claim"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/income_tax"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/income_tax_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:text="@string/professional_tax"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/pt_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyLight"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:paddingTop="5dp">
+
+                            <TextView android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom_line"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp">
+
+                            <TextView
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:text="@string/total_deduction"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+
+                            <TextView
+                                android:id="@+id/total_deduction_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_rupee"
+                                android:fontFamily="@string/fontFamilyMedium"
+                                android:gravity="center_vertical|end"
+                                android:paddingEnd="@dimen/table_content_padding"
+                                android:paddingStart="@dimen/table_content_padding"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/calendarDateTextSize" />
+                        </TableRow>
+
+                    </TableLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_table_rectange"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/net_amount"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryText" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="2dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/ic_section_background"
+    android:orientation="vertical"
+    tools:context=".activity.TecClaimActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/claim_type" />
+
+        <Spinner
+            android:id="@+id/claimSpinner"
+            style="@style/spinnerUnderline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/intercity_travel_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_intercity" />
+
+        </LinearLayout>
+
+
+        <!-- 2nd -->
+
+        <LinearLayout
+            android:id="@+id/layoutHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_hotel" />
+
+        </LinearLayout>
+
+        <!-- 3rd -->
+
+        <LinearLayout
+            android:id="@+id/layoutFoodBoardingIem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_food_boarding" />
+        </LinearLayout>
+
+
+        <!-- 4th -->
+        <LinearLayout
+            android:id="@+id/layoutSiteConveyance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_site_conveyance" />
+        </LinearLayout>
+
+        <!-- 5th -->
+
+        <LinearLayout
+            android:id="@+id/mislleniousLaoyut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_mislenious" />
+        </LinearLayout>
+
+
+        <!-- 5th -->
+
+        <LinearLayout
+            android:id="@+id/fuelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_fuel_mileage" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/attachmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_attachment" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/add_save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorIconText" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

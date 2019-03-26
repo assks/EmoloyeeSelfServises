@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:foreground="?android:selectableItemBackground"
+    android:background="@color/colorIconText"
+    android:padding="5dp">
+
+  <ImageView
+      android:id="@+id/status"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_margin="5dp"
+      android:src="@drawable/ic_chevron"
+      tools:ignore="ContentDescription" />
+
+  <TextView
+      android:id="@+id/type"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toStartOf="@id/status"
+      android:padding="8dp"
+      android:text="@string/app_name"
+      android:textColor="@color/colorPrimaryText" />
+
+  <TextView
+      android:id="@+id/description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/type"
+      android:layout_centerVertical="true"
+      android:layout_toStartOf="@id/status"
+      android:fontFamily="@string/fontFamilyLight"
+      android:includeFontPadding="false"
+      android:maxLines="2"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:text="@string/leave_surety_text"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/smallTextSize" />
+
+</RelativeLayout>

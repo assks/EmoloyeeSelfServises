@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none"
+    tools:context=".activity.LeaveActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/leave_type"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance_leave"
+                    android:textColor="@color/colorDivider" />
+
+                <TextView
+                    android:id="@+id/leave_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/start_date_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/start_date"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/end_date_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/end_date"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/halfDayTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/half_days"
+                android:textColor="@color/colorDivider"
+                android:textSize="@dimen/smallTextSize"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/halfDaySpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/durationTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/duration"
+                android:textColor="@color/colorDivider"
+                android:textSize="@dimen/smallTextSize"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/durationSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remainingLeave"
+                    android:textColor="@color/colorDivider" />
+
+                <TextView
+                    android:id="@+id/remaining_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/leave_location_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/leave_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/leave_location_text"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/leave_reason"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/descriptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="500"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/description"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textColorHint="@color/colorSecondary"
+                    android:textSize="@dimen/mediumTextSize"
+                    android:theme="@style/MyEditText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/surety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/leave_surety_text"
+            android:textColor="@color/colorIconText" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_bg"
+            android:foreground="?android:selectableItemBackground"
+            android:text="@string/request"
+            android:visibility="gone"
+            android:textColor="@color/colorIconText" />
+
+    </LinearLayout>
+
+</ScrollView>

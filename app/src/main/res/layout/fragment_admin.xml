@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/ic_section_background"
+    tools:context=".fragment.AdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/add_project"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/add_project" />
+
+
+            <Button
+                android:id="@+id/approve_project"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/approve_project_text" />
+
+
+            <Button
+                android:id="@+id/assign_activity"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/assign_activity" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/approve_timesheet"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/approve_timesheet" />
+
+            <Button
+                android:id="@+id/add_timesheet"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/assign_timesheet" />
+
+            <Button
+                android:id="@+id/assign_leaave"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/assign_leaves" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/approve_leave"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/approve_leave" />
+
+            <Button
+                android:id="@+id/add_vendor"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/add_vendor" />
+
+
+            <Button
+                android:id="@+id/approve_vendor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/approve_vendor"
+                tools:ignore="ButtonStyle" />
+
+
+        </LinearLayout>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="16dp"
+             android:weightSum="3">
+
+             <Button
+                 android:id="@+id/approve_tec"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/smallTextSize"
+                 android:layout_marginRight="@dimen/smallTextSize"
+                 android:layout_weight="1"
+                 android:background="?android:selectableItemBackground"
+                 android:drawablePadding="10dp"
+                 android:drawableTop="@mipmap/attendance_hrs"
+                 android:ellipsize="end"
+                 android:maxLines="2"
+                 android:text="@string/approve_tec_text"
+                 tools:ignore="ButtonStyle" />
+
+             <Button
+                 android:id="@+id/approve_pay_vendor"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/smallTextSize"
+                 android:layout_marginRight="@dimen/smallTextSize"
+                 android:layout_weight="1"
+                 android:maxLines="2"
+                 android:ellipsize="end"
+                 android:background="?android:selectableItemBackground"
+                 android:drawablePadding="10dp"
+                 android:drawableTop="@mipmap/attendance_hrs"
+                 android:text="@string/approve_pay_vendor" />
+
+             <Button
+                 android:id="@+id/user_trip"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/smallTextSize"
+                 android:layout_marginRight="@dimen/smallTextSize"
+                 android:layout_weight="1"
+                 android:background="?android:selectableItemBackground"
+                 android:drawablePadding="10dp"
+                 android:drawableTop="@mipmap/attendance_hrs"
+                 android:ellipsize="end"
+                 android:maxLines="2"
+                 android:text="@string/user_trip"
+                 tools:ignore="ButtonStyle" />
+
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/requestedProject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallTextSize"
+                android:layout_marginRight="@dimen/smallTextSize"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTop="@mipmap/attendance_hrs"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/requested_project"
+                tools:ignore="ButtonStyle" />
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TripRequestBookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/ic_section_background"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/fontFamilyMedium"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/headingTextSize" />
+
+            <TextView
+                android:id="@+id/subHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/default_country"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/mediumTextSize" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subHeading"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorSecondaryText" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/description"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:id="@+id/memberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/trip_member"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/memberTextView"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:id="@+id/hotel_users_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_section_background"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/travel_type"
+                android:textSize="@dimen/calendarDateTextSize" />
+
+            <Spinner
+                android:id="@+id/travelTypeSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/booking_mode" />
+
+            <Spinner
+                android:id="@+id/travelModeSpinner"
+                style="@style/spinnerUnderline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+
+            <LinearLayout
+                android:id="@+id/hotelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/layout_booking_entry_hotel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/busTrainFlightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/layout_booking_entry_bus" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/attachment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableEnd="@drawable/ic_check_circle"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button_bg"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/booking"
+                android:textColor="@color/colorIconText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

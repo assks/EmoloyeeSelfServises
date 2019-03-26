@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingTop="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/headingTextSize" />
+
+
+    <TextView
+        android:id="@+id/time_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/project"
+        android:maxLength="5"
+        android:fontFamily="@string/fontFamilyLight"
+        android:textSize="@dimen/mediumTextSize"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/colorPrimaryText" />
+
+    <TextView
+        android:id="@+id/activity_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/project"
+        android:fontFamily="@string/fontFamilyLight"
+        android:textSize="@dimen/mediumTextSize"
+        android:layout_toStartOf="@id/time_spent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/colorPrimaryText" />
+
+</RelativeLayout>

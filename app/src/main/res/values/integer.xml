@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="cameraFaceId">0</integer>
+    <integer name="not_found">404</integer>
+    <integer name="admin">2</integer>
+    <integer name="user">1</integer>
+    <integer name="rejected">1</integer>
+    <integer name="approve">4</integer>
+    <integer name="cancel">2</integer>
+    <integer name="state_threshold">1</integer>
+</resources>

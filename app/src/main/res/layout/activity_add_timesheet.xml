@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddTimesheetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/ic_section_background"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/user_name_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/MyHintText">
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="@string/user_name"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:theme="@style/MyEditText"
+                        tools:ignore="TextFields" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/start_date_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name_input_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    app:hintTextAppearance="@style/MyHintText">
+
+                    <EditText
+                        android:id="@+id/start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="@string/date"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/mediumTextSize"
+                        android:theme="@style/MyEditText"
+                        tools:ignore="TextFields" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/out_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start_date_input_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@mipmap/punch_out_clock"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/headingTextSize" />
+
+
+                <TextView
+                    android:id="@+id/in_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/start_date_input_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@mipmap/punch_in_clock"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/headingTextSize" />
+
+
+                <TextView
+                    android:id="@+id/log_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/start_date_input_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@mipmap/attendance_hrs"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/headingTextSize" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dividerHeight"
+                    android:layout_below="@id/log_hours"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorDivider" />
+
+
+                <TextView
+                    android:id="@+id/project_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/project"
+                    android:textSize="@dimen/smallTextSize" />
+
+                <TextView
+                    android:id="@+id/billing_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/project_text"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/billable_text"
+                    android:textColor="@color/colorError" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/task_Recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/billing_type"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/submit"
+                android:textColor="@color/colorIconText" />
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

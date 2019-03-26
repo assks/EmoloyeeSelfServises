@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/date"
+      android:textColor="@color/colorSecondaryText"
+      android:textSize="@dimen/calendarDateTextSize" />
+
+  <TextView
+      android:id="@+id/fuelDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bottom_line"
+      android:paddingBottom="4dp"
+      android:paddingEnd="2dp"
+      android:paddingStart="2dp"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/mediumTextSize" />
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="10dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/type_of_vehicle"
+      android:textColor="@color/colorSecondaryText"
+      android:textSize="@dimen/calendarDateTextSize" />
+
+  <TextView
+      android:id="@+id/typeVehicleSpinner"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bottom_line"
+      android:paddingBottom="4dp"
+      android:paddingEnd="2dp"
+      android:paddingStart="2dp"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/mediumTextSize" />
+
+
+  <RelativeLayout
+      android:id="@+id/userFuelLocation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="8dp"
+      android:visibility="visible">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/divider"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/from"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="@dimen/calendarDateTextSize" />
+
+      <TextView
+          android:id="@+id/fromFuelSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bottom_line"
+          android:paddingBottom="4dp"
+          android:paddingEnd="2dp"
+          android:paddingStart="2dp"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/divider"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/to"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="@dimen/calendarDateTextSize" />
+
+      <TextView
+          android:id="@+id/toFuelSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bottom_line"
+          android:paddingBottom="4dp"
+          android:paddingEnd="2dp"
+          android:paddingStart="2dp"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp">
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/divider1"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/travel_distance_edittext"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="@dimen/calendarDateTextSize" />
+
+      <TextView
+          android:id="@+id/travel_distance"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bottom_line"
+          android:paddingBottom="4dp"
+          android:paddingEnd="2dp"
+          android:paddingStart="2dp"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/divider1"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/mileage"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="@dimen/calendarDateTextSize" />
+
+      <TextView
+          android:id="@+id/mileage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bottom_line"
+          android:paddingBottom="4dp"
+          android:paddingEnd="2dp"
+          android:paddingStart="2dp"
+          android:textColor="@color/colorPrimaryText"
+          android:textSize="@dimen/mediumTextSize" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="8dp"
+      android:text="@string/bill_amount"
+      android:textColor="@color/colorSecondaryText"
+      android:textSize="@dimen/calendarDateTextSize" />
+
+  <TextView
+      android:id="@+id/fuel_bill_amount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/bottom_line"
+      android:paddingBottom="4dp"
+      android:paddingEnd="2dp"
+      android:paddingStart="2dp"
+      android:textColor="@color/colorPrimaryText"
+      android:textSize="@dimen/mediumTextSize" />
+
+</LinearLayout>

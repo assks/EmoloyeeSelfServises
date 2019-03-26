@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/colorIconText">
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circluler_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="1"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorIconText"
+            android:text="@string/mon"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/dateLayout"
+        android:layout_toStartOf="@id/status"
+        android:padding="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryText" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type"
+        android:layout_toEndOf="@id/dateLayout"
+        android:layout_toStartOf="@id/option"
+        android:fontFamily="@string/fontFamilyLight"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/leave_surety_text"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/smallTextSize" />
+
+</RelativeLayout>

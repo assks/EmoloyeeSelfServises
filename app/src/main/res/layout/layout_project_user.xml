@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/add_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_more"
+        android:contentDescription="@string/add_tag" />
+
+
+    <TextView
+        android:id="@+id/projectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/headingTextSize"
+        android:layout_toStartOf="@id/add_tag"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryText" />
+
+
+    <TextView
+        android:id="@+id/projectType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/projectName"
+        android:layout_toStartOf="@id/add_tag"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/ic_section_background"
+        tools:context=".activity.GuestBookingListActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bookingRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_attach_file"
+            android:text="@string/no_history_found"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:textSize="@dimen/headingTextSize"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+</layout>

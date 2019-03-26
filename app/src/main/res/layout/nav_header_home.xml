@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/extraHeadingTextSize">
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/circluler_bg"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/colorIconText"
+            android:textSize="@dimen/mediumTextSize" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:gravity="center_horizontal"
+            android:text="@string/app_version"
+            android:textColor="@color/colorSecondary"
+            android:textSize="@dimen/smallTextSize" />
+
+    </LinearLayout>
+</LinearLayout>

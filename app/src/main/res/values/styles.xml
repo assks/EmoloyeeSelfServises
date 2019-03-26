@@ -1,0 +1,48 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlHighlight">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/colorPrimaryText</item>
+        <item name="android:actionMenuTextColor">@color/colorIconText</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@mipmap/gra1</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="NoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlHighlight">@color/colorDivider</item>
+        <item name="colorControlActivated">@color/colorPrimaryText</item>
+        <item name="android:actionMenuTextColor">@color/colorIconText</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/gra1</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+
+    <style name="spinnerUnderline" parent="@style/Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownVerticalOffset">40dp</item>
+    </style>
+
+
+    <style name="MyHintText" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/calendarDateTextSize</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="colorControlNormal">@color/colorSecondaryText</item>
+        <item name="colorControlHighlight">@color/colorSecondaryText</item>
+        <item name="colorControlActivated">@color/colorPrimaryText</item>
+    </style>
+
+</resources>

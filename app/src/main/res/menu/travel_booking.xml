@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/booking_request"
+        android:icon="@drawable/ic_booking_request"
+        android:title="@string/booking_request"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/new_booking"
+        android:icon="@drawable/ic_self_booking"
+        android:title="@string/self_booking"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete"
+        app:showAsAction="never" />
+
+</menu>

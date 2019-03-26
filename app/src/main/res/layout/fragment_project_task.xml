@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_section_background"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginStart="1dp"
+    tools:context=".fragment.ProjectTaskFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/userProjectRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
+        <RelativeLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@drawable/ic_section_background"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@string/fontFamilyCondensed"
+                android:text="@string/project_not_found"
+                android:textAlignment="center"
+                android:textSize="@dimen/extraHeadingTextSize" />
+
+
+            <Button
+                android:id="@+id/create_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_bg"
+                android:foreground="?android:selectableItemBackground"
+                android:text="@string/create_new_project"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/headingTextSize" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
